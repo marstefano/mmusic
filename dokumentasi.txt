@@ -1,0 +1,30 @@
+ANALISA
+Tabel :
+Login Pembeli / Penjual 
+	id_user = int PK
+	username = string
+	password = string
+Register Pembeli / Penjual
+id_user = int PK
+username = string
+password = string
+email = string
+alamat = string
+no_telp = int
+Produk
+	id_produk = int
+	nama_produk = string
+	harga = int
+	deskripsi = string
+	produk_label = varchar
+	
+ Daftar API :
+“/homepage” = halaman utama 
+“/user” = halaman user
+“/user/:id = detail user
+"/users/:name = detail nama user
+"/products" = Halaman isi product
+ "/products/:id" = detail product
+
+User Journey :
+	User masuk ke web lalu login dan register lalu masuk ke homepage untuk melihat produk produk yang tersedia untuk dibeli bila ada yang ingin dibeli user bisa pesan lalu melakukan transaksi ke penjual lalu melakukan pembayaran dan penjual mengirim ke pembeli
