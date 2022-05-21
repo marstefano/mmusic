@@ -2,13 +2,8 @@
 
 const express = require("express");
 const router = express.Router();
+const { Home } = require("../Controller/Controller");
 
-router.get("/", (req, res) => {
-  res.json({
-    title: "Halo bung ?",
-    message: "Halo bung",
-    status: 200,
-  })
-})
+router.get("/", Home.homePage);
 
 module.exports = router;
